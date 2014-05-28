@@ -4,6 +4,7 @@
   "description": "webRTC conversation transcription with PubNub and Wit.AI",
   "main": "index.js",
   "scripts": {
+    "postinstall": "node_modules/bower/bin/bower install ./server/client/bower.json"
   },
   "repository": {
     "type": "git",
