@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
   if (req.method === "OPTIONS") { res.send(204) };
   next();
 });
-app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/server/client'));
 require("./server/routes.js")(app);
 
 app.listen(port);
