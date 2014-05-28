@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "webRTC conversation transcription with PubNub and Wit.AI",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/apiConMen/timbre"
@@ -19,6 +18,7 @@
     "express": "~4.3.1",
     "body-parser": "~1.2.2",
     "socket.io": "~0.9.17",
-    "bower": "0.6.x"
+    "bower": "0.6.x",
+    "nodemon": "~1.1.1"
   }
 }
