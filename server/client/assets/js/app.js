@@ -51,7 +51,7 @@ app.controller('HostController', ['$scope', '$interval', '$routeParams', '$http'
   var getTranscriptions = function() {
     $http.get('/transcription').success(function(data) {
       console.log('polled transcription endpoint:', data);
-      if (typeof data === 'object' && data.message) {
+      if (data) {
         $scope.interview.push(data);
       }
     });
