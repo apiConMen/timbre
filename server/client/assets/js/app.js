@@ -25,7 +25,10 @@ app.run(function($rootScope){
 });
 
 app.controller('HostController', ['$scope', '$interval', '$routeParams', '$http',function($scope, $interval, $routeParams, $http){
-  timbre.init($routeParams.name, console.log.bind(console));
+  if(!$scope.init) {
+    timbre.init($routeParams.name, console.log.bind(console));
+    $scope.init = true;
+  }
   $scope.interview = [];
   $scope.hostName = $routeParams.name;
   var called = function() {
