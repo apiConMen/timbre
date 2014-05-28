@@ -27,6 +27,9 @@
           message: response[1].msg_body
         });
       }
+      if (response[0] === 'error') {
+        witsock.send(JSON.stringify(['start']));
+      }
     };
   };
 
